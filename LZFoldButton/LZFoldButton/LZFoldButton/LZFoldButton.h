@@ -27,35 +27,34 @@ typedef NS_ENUM(NSInteger,LZFoldButtonType) {
     LZFoldButtonTypeNormal = 0,//
     LZFoldButtonTypeRight  = 1,//图片在右
 };
+////展开的方向
+//typedef NS_ENUM(NSInteger,LZUnfoldOrientation) {
+//    LZUnfoldOrientationUp    = 0,
+//    LZUnfoldOrientationLeft  = 1,
+//    LZUnfoldOrientationRight = 2,
+//    LZUnfoldOrientationDown  = 3,
+//};
+
 //block 回调返回选中结果
 typedef void(^LZFoldButtonBlock)(id obj);
 
 @interface LZFoldButton : UIView
 
-/** 设置按钮的背景图 */
-@property (strong,nonatomic)UIImage *lzBackgroundImage;
-/** 设置按钮在选中状态下的图片 */
-@property (strong,nonatomic)UIImage *lzSelectImage;
-/** 设置按钮在未选中状态下的图片 */
-@property (strong,nonatomic)UIImage *lzUnselectImage;
 /** 设置按钮的样式 */
 @property (assign,nonatomic)LZFoldButtonType lzButtonType;
-/** 设置按钮标题属性 */
-@property (copy,nonatomic)NSString *lzTitle;
+
 /** 设置按钮标题字号 */
 @property (assign,nonatomic)CGFloat lzTitleFontSize;
-/** 设置按钮选中状态下的文字颜色 */
-@property (strong,nonatomic)UIColor *lzSelectTitleFontColor;
-/** 设置按钮未选中状态下的文字颜色 */
-@property (strong,nonatomic)UIColor *lzUnselectTitleFontColor;
 /** 选择后是否改变title为选择的内容,默认YES */
 @property (assign,nonatomic)BOOL lzTitleChanged;
 /** 按钮的选中状态 */
-@property (assign,nonatomic)BOOL lzSelected;
+@property (assign,nonatomic,readonly)BOOL lzSelected;
 /** 设置按钮的代理 */
 @property (weak,nonatomic) id <LZFoldButtonDelegate> lzDelegate;
 /** 以block形式回调选中结果 */
 @property (copy,nonatomic) LZFoldButtonBlock lzResultBlock;
+
+#pragma mark - 以下是设置展开后的下拉列表相关信息
 /** 设置展开的视图背景色 */
 @property (strong,nonatomic)UIColor *lzColor;
 /** 设置展开后的视图透明度 */
@@ -86,6 +85,16 @@ typedef void(^LZFoldButtonBlock)(id obj);
 
 /** 外部打开列表的方法 */
 - (void)LZOpenTable;
+
+/** 设置按钮的标题 */
+- (void)LZSetTitle:(NSString*)title forState:(UIControlState)state;
+/** 设置按钮的标题颜色 */
+-(void)LZSetTitleColor:(UIColor*)color forState:(UIControlState)state ;
+/** 设置按钮的背景图片 */
+- (void)LZSetBackgroundImage:(UIImage *)image forState:(UIControlState)state;
+/** 设置按钮的图片 */
+- (void)LZSetImage:(UIImage *)image forState:(UIControlState)state;
+
 @end
 
 

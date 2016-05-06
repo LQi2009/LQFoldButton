@@ -29,12 +29,12 @@
     lz.lzDelegate = self;
     lz.backgroundColor = [UIColor redColor];
     lz.lzFontSize = 12;
-    lz.lzTitle = @"请选择";
     lz.lzHeight = 300;
     lz.lzButtonType = 1;
-//    lz.lzSelectTitleFontColor = [UIColor greenColor];
-    lz.lzSelectImage = [UIImage imageNamed:@"address_select"];
-    lz.lzUnselectImage = [UIImage imageNamed:@"arrow_right"];
+
+    [lz LZSetTitle:@"请选择" forState:UIControlStateNormal];
+    [lz LZSetImage:[UIImage imageNamed:@"address_select"] forState:UIControlStateNormal];
+    [lz LZSetImage:[UIImage imageNamed:@"arrow_right"] forState:UIControlStateSelected];
     [self.view addSubview:lz];
     
     lz.lzResultBlock = ^(id obj){

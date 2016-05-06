@@ -52,7 +52,7 @@
 - (void)setUI {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = self.bounds;
-    NSString *title = self.lzTitle;
+    NSString *title = nil;
     if (_dataArray.count > 0 && !title) {
         title = _dataArray[0];
     } else {
@@ -111,16 +111,41 @@
     }
     
     if (self.lzTitleChanged) {
-        [self setLzTitle:obj];
+        [self LZSetTitle:obj forState:UIControlStateNormal];
     }
     
     [self buttonClick:self.lzButton];
+}
+
+#pragma mark - 自定义按钮设置方法
+- (void)LZSetTitle:(NSString*)title forState:(UIControlState)state {
+    [self.lzButton setTitle:title forState:state];
+}
+
+-(void)LZSetTitleColor:(UIColor*)color forState:(UIControlState)state {
+    [self.lzButton setTitleColor:color forState:state];
+}
+
+- (void)LZSetBackgroundImage:(UIImage *)image forState:(UIControlState)state {
+    [self.lzButton setBackgroundImage:image forState:state];
+}
+
+- (void)LZSetImage:(UIImage *)image forState:(UIControlState)state {
+    [self.lzButton setImage:image forState:state];
+    
+    if (_lzButtonType == LZFoldButtonTypeRight) {
+        [self setLzButtonType:LZFoldButtonTypeRight];
+    }
 }
 
 #pragma mark - 重写属性setter方法
 -(void)setBackgroundColor:(UIColor *)backgroundColor {
     
     self.lzButton.backgroundColor = backgroundColor;
+}
+
+- (void)setLzTitleFontSize:(CGFloat)lzTitleFontSize {
+    self.lzButton.titleLabel.font = [UIFont systemFontOfSize:lzTitleFontSize];
 }
 
 -(void)setLzColor:(UIColor *)lzColor {
@@ -133,43 +158,9 @@
     _lzAlpha = lzAlpha;
 }
 
-- (void)setLzTitle:(NSString *)lzTitle {
-    if (![_lzTitle isEqualToString:lzTitle]) {
-        _lzTitle = [lzTitle copy];
-    }
-    
-    [self.lzButton setTitle:lzTitle forState:UIControlStateNormal];
-}
-
-- (void)setLzTitleFontSize:(CGFloat)lzTitleFontSize {
-    self.lzButton.titleLabel.font = [UIFont systemFontOfSize:lzTitleFontSize];
-}
-
-- (void)setLzSelectTitleFontColor:(UIColor *)lzSelectTitleFontColor {
-    [self.lzButton setTitleColor:lzSelectTitleFontColor forState:UIControlStateSelected];
-}
-
-- (void)setLzUnselectTitleFontColor:(UIColor *)lzUnselectTitleFontColor {
-    [self.lzButton setTitleColor:lzUnselectTitleFontColor forState:UIControlStateNormal];
-}
-
-- (void)setLzBackgroundImage:(UIImage *)lzBackgroundImage {
-    [self.lzButton setBackgroundImage:lzBackgroundImage forState:UIControlStateNormal];
-}
-
-- (void)setLzUnselectImage:(UIImage *)lzUnselectImage {
-    [self.lzButton setImage:lzUnselectImage forState:UIControlStateNormal];
-    if (_lzButtonType == LZFoldButtonTypeRight) {
-        [self setLzButtonType:LZFoldButtonTypeRight];
-    }
-}
-
-- (void)setLzSelectImage:(UIImage *)lzSelectImage {
-    [self.lzButton setImage:lzSelectImage forState:UIControlStateSelected];
-    if (_lzButtonType == LZFoldButtonTypeRight) {
-        [self setLzButtonType:LZFoldButtonTypeRight];
-    }
-}
+//- (void)setLzSelected:(BOOL)lzSelected {
+//    
+//}
 
 - (void)setLzButtonType:(LZFoldButtonType)lzButtonType {
     _lzButtonType = lzButtonType;
@@ -244,6 +235,7 @@
         
     }];
 }
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
