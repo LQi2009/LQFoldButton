@@ -210,27 +210,44 @@
 }
 
 - (void)tableClose {
-    
+    //如果已经关闭了,直接返回
+    if (_isTableFold == NO) {
+        return;
+    }
     _isTableFold = NO;
     CGRect rect = self.frame;
     rect.size.height -= self.lzHeight;
     self.frame = rect;
     [UIView animateWithDuration:0.1 animations:^{
-        self.lzTableView.frame = CGRectMake(0, _showSize.height, self.bounds.size.width, 0);
-        self.lzBackgroundView.frame = CGRectMake(0, _showSize.height, self.bounds.size.width, 0);
+        CGRect rect1 = self.lzTableView.frame;
+        rect1.size.height -= self.lzHeight;
+        self.lzTableView.frame = rect1;
+        
+        CGRect rect2 = self.lzBackgroundView.frame;
+        rect2.size.height -= self.lzHeight;
+        self.lzBackgroundView.frame = rect2;
     } completion:^(BOOL finished) {
         
     }];
 }
 
 - (void)tableOpen {
+    //如果已经展开了,直接返回
+    if (_isTableFold == YES) {
+        return;
+    }
     _isTableFold = YES;
     CGRect rect = self.frame;
     rect.size.height += self.lzHeight;
     self.frame = rect;
     [UIView animateWithDuration:0.3 animations:^{
-        self.lzTableView.frame = CGRectMake(0, _showSize.height, self.bounds.size.width, self.lzHeight);
-        self.lzBackgroundView.frame = CGRectMake(0, _showSize.height, self.bounds.size.width, self.lzHeight);
+        CGRect rect1 = self.lzTableView.frame;
+        rect1.size.height += self.lzHeight;
+        self.lzTableView.frame = rect1;
+        
+        CGRect rect2 = self.lzBackgroundView.frame;
+        rect2.size.height += self.lzHeight;
+        self.lzBackgroundView.frame = rect2;
     } completion:^(BOOL finished) {
         
     }];

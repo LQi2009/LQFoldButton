@@ -37,12 +37,13 @@
     [lz LZSetImage:[UIImage imageNamed:@"arrow_right"] forState:UIControlStateSelected];
     [self.view addSubview:lz];
     
-    lz.lzResultBlock = ^(id obj){
-        NSLog(@"block>>%@",obj);
-    };
+    //使用block回调结果,
+//    lz.lzResultBlock = ^(id obj){
+//        NSLog(@"block>>%@",obj);
+//    };
     
 }
-
+//使用代理回调结果
 -(void)LZFoldButton:(LZFoldButton*)foldButton didSelectObject:(id)obj {
     NSLog(@"%@",obj);
     
@@ -56,7 +57,6 @@
     } else {
         [lz LZOpenTable];
     }
-    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
