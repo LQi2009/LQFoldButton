@@ -7,13 +7,13 @@ LZFoldButton是将UIButton,UITableView和一些其他控件进行封装,并提�
 
 ###3.1初始化
 初始化的时候请使用我提供的一个初始化方法,参数增加了一个数据源数组,目前设定的是数组内加入的是字符串,如果需要传入模型,可以根据自己的需求进行修改;
-```
+```Objective-C
 -(instancetype)initWithFrame:(CGRect)frame dataArray:(NSArray<NSString *> *)dataArray;
 ```
 ###3.2设置属性
 关于属性的设置,请不要直接使用`UIView`的默认属性,其背景色的设置,可以使用`backgroundColor`,这个方法我进行了重写;
 在进行按钮的设置时,我尽量使用了和系统按钮类似的方式:
-```
+```Objective-C
 /** 设置按钮的标题 */
 - (void)LZSetTitle:(NSString*)title forState:(UIControlState)state;
 /** 设置按钮的标题颜色 */
@@ -24,7 +24,7 @@ LZFoldButton是将UIButton,UITableView和一些其他控件进行封装,并提�
 - (void)LZSetImage:(UIImage *)image forState:(UIControlState)state;
 ```
 增加了以下几个属性的设置:
-```
+```Objective-C
 /** 设置按钮的样式 */
 @property (assign,nonatomic)LZFoldButtonType lzButtonType;
 
@@ -41,7 +41,7 @@ LZFoldButton是将UIButton,UITableView和一些其他控件进行封装,并提�
 
 -----
 对于下拉列表的内容的一些设置,我提供了以下几个属性:
-```
+```Objective-C
 /** 设置展开的视图背景色 */
 @property (strong,nonatomic)UIColor *lzColor;
 /** 设置展开后的视图透明度 */
@@ -55,7 +55,7 @@ LZFoldButton是将UIButton,UITableView和一些其他控件进行封装,并提�
 @property (assign,nonatomic)CGFloat lzHeight;
 ```
 另外还提供了外部打开列表,关闭列表的方法:
-```
+```Objective-C
 /** 外部关闭列表的方法 */
 - (void)LZCloseTable;
 
@@ -65,7 +65,7 @@ LZFoldButton是将UIButton,UITableView和一些其他控件进行封装,并提�
 主要是考虑到,可能会有在外部手动打开/关闭列表的需求,一般是不需要的;
 ###4.获取结果
 关于结果的获取,我提供了两种方式`Block`和`Delegate`,可根据自己的需求选择:
-```
+```Objective-C
 /** 以block形式回调选中结果 */
 @property (copy,nonatomic) LZFoldButtonBlock lzResultBlock;
 
@@ -77,7 +77,7 @@ LZFoldButton是将UIButton,UITableView和一些其他控件进行封装,并提�
 ###5.使用
 使用其实特别简单:
 
-```
+```Objective-C
 NSArray *arr = @[@"测试1",@"测试2",@"测试3",@"测试4",@"测试5",@"测试6",@"测试7",@"测试8"];
  self.view.backgroundColor = [UIColor grayColor];
  
@@ -97,13 +97,13 @@ lz.lzButtonType = LZFoldButtonTypeRight;
  
  以上就可以在界面显示一个可以折叠的下拉列表了;可以在代理方法或block里获取选择的结果;
  使用block获取结果:
- ```
+ ```Objective-C
  lz.lzResultBlock = ^(id obj){
   NSLog(@"block>>%@",obj);
   };
   ```
   使用代理获取结果:
-  ```
+  ```Objective-C
    //使用代理回调结果
 -(void)LZFoldButton:(LZFoldButton*)foldButton didSelectObject:(id)obj {
    NSLog(@"%@",obj);
