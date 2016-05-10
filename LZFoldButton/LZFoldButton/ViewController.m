@@ -30,7 +30,7 @@
     lz.backgroundColor = [UIColor redColor];
     lz.lzFontSize = 12;
     lz.lzHeight = 300;
-    lz.lzButtonType = 1;
+    lz.lzButtonType = LZFoldButtonTypeRight;
 
     [lz LZSetTitle:@"请选择" forState:UIControlStateNormal];
     [lz LZSetImage:[UIImage imageNamed:@"address_select"] forState:UIControlStateNormal];

@@ -199,6 +199,13 @@
 
 #pragma mark - 按钮点击事件
 - (void)buttonClick:(UIButton*)button {
+    //保证在父视图的最前面,不被其他视图遮挡
+    if (self.superview != nil) {
+        if ([self.superview.subviews lastObject] != self) {
+            [self.superview bringSubviewToFront:self];
+        }
+    }
+    
     button.selected = !button.selected;
     if (_isTableFold) {
         
