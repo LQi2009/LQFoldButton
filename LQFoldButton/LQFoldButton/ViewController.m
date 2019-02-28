@@ -34,17 +34,9 @@
     _foldButton = [[LQFoldButton alloc]init];
     _foldButton.backgroundColor = [UIColor redColor];
     _foldButton.frame = CGRectMake(100, 50, 100, 30);
-//    _foldButton.ti
+
     [_foldButton configDatas:datas];
     
-    
-//    lz.lzFontSize = 12;
-//    lz.lzHeight = 300;
-//    lz.lzButtonType = LZFoldButtonTypeRight;
-//
-//    [lz LZSetTitle:@"请选择" forState:UIControlStateNormal];
-//    [lz LZSetImage:[UIImage imageNamed:@"address_select"] forState:UIControlStateNormal];
-//    [lz LZSetImage:[UIImage imageNamed:@"arrow_right"] forState:UIControlStateSelected];
     [self.view addSubview:_foldButton];
 }
 
