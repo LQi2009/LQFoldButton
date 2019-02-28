@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D277C931212FAE53003327DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D277C930212FAE53003327DB /* AppDelegate.m */; };
+		D277C934212FAE53003327DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D277C933212FAE53003327DB /* ViewController.m */; };
+		D277C937212FAE53003327DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D277C935212FAE53003327DB /* Main.storyboard */; };
+		D277C939212FAE54003327DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D277C938212FAE54003327DB /* Assets.xcassets */; };
+		D277C93C212FAE54003327DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D277C93A212FAE54003327DB /* LaunchScreen.storyboard */; };
+		D277C93F212FAE54003327DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D277C93E212FAE54003327DB /* main.m */; };
+		D277C949212FAE54003327DB /* LQFoldButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D277C948212FAE54003327DB /* LQFoldButtonTests.m */; };
+		D277C954212FAE54003327DB /* LQFoldButtonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D277C953212FAE54003327DB /* LQFoldButtonUITests.m */; };
+		D277C964212FB0E0003327DB /* LQFoldButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D277C963212FB0E0003327DB /* LQFoldButton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D277C945212FAE54003327DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D277C924212FAE53003327DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D277C92B212FAE53003327DB;
+			remoteInfo = LQFoldButton;
+		};
+		D277C950212FAE54003327DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D277C924212FAE53003327DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D277C92B212FAE53003327DB;
+			remoteInfo = LQFoldButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D277C92C212FAE53003327DB /* LQFoldButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LQFoldButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D277C92F212FAE53003327DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D277C930212FAE53003327DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D277C932212FAE53003327DB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D277C933212FAE53003327DB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D277C936212FAE53003327DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D277C938212FAE54003327DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D277C93B212FAE54003327DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D277C93D212FAE54003327DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D277C93E212FAE54003327DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D277C944212FAE54003327DB /* LQFoldButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LQFoldButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D277C948212FAE54003327DB /* LQFoldButtonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQFoldButtonTests.m; sourceTree = "<group>"; };
+		D277C94A212FAE54003327DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D277C94F212FAE54003327DB /* LQFoldButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LQFoldButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D277C953212FAE54003327DB /* LQFoldButtonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQFoldButtonUITests.m; sourceTree = "<group>"; };
+		D277C955212FAE54003327DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D277C962212FB0E0003327DB /* LQFoldButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQFoldButton.h; sourceTree = "<group>"; };
+		D277C963212FB0E0003327DB /* LQFoldButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQFoldButton.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D277C929212FAE53003327DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D277C941212FAE54003327DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D277C94C212FAE54003327DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D277C923212FAE53003327DB = {
+			isa = PBXGroup;
+			children = (
+				D277C92E212FAE53003327DB /* LQFoldButton */,
+				D277C947212FAE54003327DB /* LQFoldButtonTests */,
+				D277C952212FAE54003327DB /* LQFoldButtonUITests */,
+				D277C92D212FAE53003327DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D277C92D212FAE53003327DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D277C92C212FAE53003327DB /* LQFoldButton.app */,
+				D277C944212FAE54003327DB /* LQFoldButtonTests.xctest */,
+				D277C94F212FAE54003327DB /* LQFoldButtonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D277C92E212FAE53003327DB /* LQFoldButton */ = {
+			isa = PBXGroup;
+			children = (
+				D277C961212FAE5D003327DB /* LZFoldButton */,
+				D277C92F212FAE53003327DB /* AppDelegate.h */,
+				D277C930212FAE53003327DB /* AppDelegate.m */,
+				D277C932212FAE53003327DB /* ViewController.h */,
+				D277C933212FAE53003327DB /* ViewController.m */,
+				D277C935212FAE53003327DB /* Main.storyboard */,
+				D277C938212FAE54003327DB /* Assets.xcassets */,
+				D277C93A212FAE54003327DB /* LaunchScreen.storyboard */,
+				D277C93D212FAE54003327DB /* Info.plist */,
+				D277C93E212FAE54003327DB /* main.m */,
+			);
+			path = LQFoldButton;
+			sourceTree = "<group>";
+		};
+		D277C947212FAE54003327DB /* LQFoldButtonTests */ = {
+			isa = PBXGroup;
+			children = (
+				D277C948212FAE54003327DB /* LQFoldButtonTests.m */,
+				D277C94A212FAE54003327DB /* Info.plist */,
+			);
+			path = LQFoldButtonTests;
+			sourceTree = "<group>";
+		};
+		D277C952212FAE54003327DB /* LQFoldButtonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D277C953212FAE54003327DB /* LQFoldButtonUITests.m */,
+				D277C955212FAE54003327DB /* Info.plist */,
+			);
+			path = LQFoldButtonUITests;
+			sourceTree = "<group>";
+		};
+		D277C961212FAE5D003327DB /* LZFoldButton */ = {
+			isa = PBXGroup;
+			children = (
+				D277C962212FB0E0003327DB /* LQFoldButton.h */,
+				D277C963212FB0E0003327DB /* LQFoldButton.m */,
+			);
+			path = LZFoldButton;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D277C92B212FAE53003327DB /* LQFoldButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D277C958212FAE54003327DB /* Build configuration list for PBXNativeTarget "LQFoldButton" */;
+			buildPhases = (
+				D277C928212FAE53003327DB /* Sources */,
+				D277C929212FAE53003327DB /* Frameworks */,
+				D277C92A212FAE53003327DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LQFoldButton;
+			productName = LQFoldButton;
+			productReference = D277C92C212FAE53003327DB /* LQFoldButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D277C943212FAE54003327DB /* LQFoldButtonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D277C95B212FAE54003327DB /* Build configuration list for PBXNativeTarget "LQFoldButtonTests" */;
+			buildPhases = (
+				D277C940212FAE54003327DB /* Sources */,
+				D277C941212FAE54003327DB /* Frameworks */,
+				D277C942212FAE54003327DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D277C946212FAE54003327DB /* PBXTargetDependency */,
+			);
+			name = LQFoldButtonTests;
+			productName = LQFoldButtonTests;
+			productReference = D277C944212FAE54003327DB /* LQFoldButtonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D277C94E212FAE54003327DB /* LQFoldButtonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D277C95E212FAE54003327DB /* Build configuration list for PBXNativeTarget "LQFoldButtonUITests" */;
+			buildPhases = (
+				D277C94B212FAE54003327DB /* Sources */,
+				D277C94C212FAE54003327DB /* Frameworks */,
+				D277C94D212FAE54003327DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D277C951212FAE54003327DB /* PBXTargetDependency */,
+			);
+			name = LQFoldButtonUITests;
+			productName = LQFoldButtonUITests;
+			productReference = D277C94F212FAE54003327DB /* LQFoldButtonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D277C924212FAE53003327DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = LiuQiqiang;
+				TargetAttributes = {
+					D277C92B212FAE53003327DB = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					D277C943212FAE54003327DB = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = D277C92B212FAE53003327DB;
+					};
+					D277C94E212FAE54003327DB = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = D277C92B212FAE53003327DB;
+					};
+				};
+			};
+			buildConfigurationList = D277C927212FAE53003327DB /* Build configuration list for PBXProject "LQFoldButton" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D277C923212FAE53003327DB;
+			productRefGroup = D277C92D212FAE53003327DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D277C92B212FAE53003327DB /* LQFoldButton */,
+				D277C943212FAE54003327DB /* LQFoldButtonTests */,
+				D277C94E212FAE54003327DB /* LQFoldButtonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D277C92A212FAE53003327DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D277C93C212FAE54003327DB /* LaunchScreen.storyboard in Resources */,
+				D277C939212FAE54003327DB /* Assets.xcassets in Resources */,
+				D277C937212FAE53003327DB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D277C942212FAE54003327DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D277C94D212FAE54003327DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D277C928212FAE53003327DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D277C934212FAE53003327DB /* ViewController.m in Sources */,
+				D277C93F212FAE54003327DB /* main.m in Sources */,
+				D277C931212FAE53003327DB /* AppDelegate.m in Sources */,
+				D277C964212FB0E0003327DB /* LQFoldButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D277C940212FAE54003327DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D277C949212FAE54003327DB /* LQFoldButtonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D277C94B212FAE54003327DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D277C954212FAE54003327DB /* LQFoldButtonUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D277C946212FAE54003327DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D277C92B212FAE53003327DB /* LQFoldButton */;
+			targetProxy = D277C945212FAE54003327DB /* PBXContainerItemProxy */;
+		};
+		D277C951212FAE54003327DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D277C92B212FAE53003327DB /* LQFoldButton */;
+			targetProxy = D277C950212FAE54003327DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D277C935212FAE53003327DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D277C936212FAE53003327DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D277C93A212FAE54003327DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D277C93B212FAE54003327DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D277C956212FAE54003327DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D277C957212FAE54003327DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D277C959212FAE54003327DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5AQP3WXJE;
+				INFOPLIST_FILE = LQFoldButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ldshare.LQFoldButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D277C95A212FAE54003327DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5AQP3WXJE;
+				INFOPLIST_FILE = LQFoldButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ldshare.LQFoldButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D277C95C212FAE54003327DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5AQP3WXJE;
+				INFOPLIST_FILE = LQFoldButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ldshare.LQFoldButtonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LQFoldButton.app/LQFoldButton";
+			};
+			name = Debug;
+		};
+		D277C95D212FAE54003327DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5AQP3WXJE;
+				INFOPLIST_FILE = LQFoldButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ldshare.LQFoldButtonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LQFoldButton.app/LQFoldButton";
+			};
+			name = Release;
+		};
+		D277C95F212FAE54003327DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5AQP3WXJE;
+				INFOPLIST_FILE = LQFoldButtonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ldshare.LQFoldButtonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LQFoldButton;
+			};
+			name = Debug;
+		};
+		D277C960212FAE54003327DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5AQP3WXJE;
+				INFOPLIST_FILE = LQFoldButtonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ldshare.LQFoldButtonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LQFoldButton;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D277C927212FAE53003327DB /* Build configuration list for PBXProject "LQFoldButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D277C956212FAE54003327DB /* Debug */,
+				D277C957212FAE54003327DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D277C958212FAE54003327DB /* Build configuration list for PBXNativeTarget "LQFoldButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D277C959212FAE54003327DB /* Debug */,
+				D277C95A212FAE54003327DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D277C95B212FAE54003327DB /* Build configuration list for PBXNativeTarget "LQFoldButtonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D277C95C212FAE54003327DB /* Debug */,
+				D277C95D212FAE54003327DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D277C95E212FAE54003327DB /* Build configuration list for PBXNativeTarget "LQFoldButtonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D277C95F212FAE54003327DB /* Debug */,
+				D277C960212FAE54003327DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D277C924212FAE53003327DB /* Project object */;
+}
